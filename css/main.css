@@ -1,0 +1,12 @@
+@import url("/css/new.css");
+@import url("/css/pizza.css");
+@import url("/css/combo.css");
+@import url("/css/zakuski.css");
+@import url("/css/desserts.css");
+@import url("/css/drinks.css");
+
+.main {
+  display: grid;
+  grid-area: main;
+  grid-template: 1fr / 1fr minmax(auto, 1060px) 1fr;
+}

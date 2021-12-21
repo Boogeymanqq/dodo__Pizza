@@ -1,0 +1,39 @@
+.new {
+  display: grid;
+  grid-column: 2 / 3;
+  row-gap: 44px;
+}
+.new__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+}
+.new__items {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-rows: 104px;
+  grid-auto-columns: 250px;
+  justify-content: space-between;
+}
+.new__item {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 22px;
+  box-shadow: 0px 6px 25px rgba(6, 5, 50, 0.05);
+  border-radius: 10px;
+  background: #ffffff;
+}
+.new__image {
+  align-self: center;
+  justify-self: center;
+}
+.new__about {
+  font-size: 14px;
+  line-height: 19px;
+  align-self: center;
+}
+.new__cena {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}

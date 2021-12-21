@@ -1,0 +1,158 @@
+.footer {
+  padding: 50px 0 50px 0;
+  background: #464c55;
+  display: grid;
+  grid-area: footer;
+  grid-template: 1fr / 1fr minmax(auto, 1060px) 1fr;
+}
+
+.footer__header {
+  display: grid;
+  grid-column: 2 / 3;
+}
+.footer__menu {
+  display: grid;
+  grid-auto-flow: column;
+  /* justify-content: space-between; */
+  column-gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 166px));
+}
+.footer__items {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: repeat(auto-fit, 30px);
+}
+.items__title {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+}
+.items__list {
+  font-size: 18px;
+  color: #ffffff;
+  opacity: 0.7;
+  line-height: 40px;
+}
+.items__link {
+  font-size: 18px;
+  color: #ffffff;
+  opacity: 0.5;
+  transition: 0.4s;
+}
+.items__link:hover {
+  /* color: #ffffff; */
+  transition: 0.4s;
+  opacity: 1;
+}
+.footer__list li {
+}
+
+.items__text {
+  line-height: 28px;
+}
+.text {
+  margin-bottom: 10px;
+}
+
+.footer__about {
+  display: grid;
+  grid-column: 2 / 3;
+  justify-items: end;
+  grid-auto-flow: row;
+}
+.footer__apps {
+}
+.footer__btn {
+}
+.footer__tel {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 26px;
+  color: #ffffff;
+}
+.footer__call {
+  text-align: right;
+  font-size: 15px;
+  line-height: 20px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+.footer__mail {
+  font-size: 15px;
+  line-height: 20px;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+/*  */
+
+.footer__body {
+  margin: 93px 0 40px;
+  display: grid;
+  grid-column: 2 / 3;
+  grid-auto-flow: column;
+  grid-template-columns: minmax(auto, 299px) minmax(auto, 241px);
+  column-gap: 156px;
+}
+.body__money {
+  display: grid;
+  row-gap: 12px;
+}
+.body__title {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 26px;
+  color: #ffffff;
+}
+.body__text {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  opacity: 0.7;
+}
+.body__pizzerias {
+  display: grid;
+  row-gap: 12px;
+}
+
+/*  */
+
+.footer__info {
+  display: grid;
+  grid-column: 2 / 3;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.info__dodo {
+}
+.info__dodo img {
+  margin-right: 28px;
+}
+.info__title {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  opacity: 0.7;
+  transition: 0.4s;
+}
+.info__help a {
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  opacity: 0.7;
+  transition: 0.4s;
+}
+.info__title:hover {
+  opacity: 1;
+  transition: 0.4s;
+}
+.info__help {
+}
+.info__social {
+}
+.info {
+  margin: 0 20px;
+}

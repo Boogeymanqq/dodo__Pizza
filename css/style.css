@@ -1,0 +1,22 @@
+/* font-family: "Cabin", sans-serif;
+font-family: "Dancing Script", cursive;
+font-family: "Nunito", sans-serif; */
+@import url("/css/slaids.css");
+@import url("/css/header.css");
+@import url("/css/main.css");
+@import url("/css/footer.css");
+
+.wrapper {
+  padding: 25px 0 0 0;
+  /* background: #e5e5e5; */
+  color: #000000;
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+  height: 100%;
+  display: grid;
+  grid-template: minmax(auto, 116px) minmax(auto, 400px) 1fr minmax(auto, 569px) / 1fr;
+  grid-template-areas:
+    "header"
+    "slaids"
+    "main"
+    "footer";
+}
