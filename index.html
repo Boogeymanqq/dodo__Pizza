@@ -16,12 +16,15 @@
   </head>
   <body>
     <div class="wrapper">
+
+       <!-- Шапка сайта -->
       <header class="header">
         <div class="header__dodo">
           <div class="header__logo">
-            <div class="header__image">
+            <picture class="header__image">
+               <source media="(max-width:425px)" srcset="/img/header/logo_mini.svg">
               <img src="/img/header/logo.svg" alt="" />
-            </div>
+            </picture>
             <h1 class="header__name">ДОДО ПИЦЦА</h1>
             <!-- <img src="/img/header/dodo.svg" alt="" /> -->
             <p class="header__text">Сеть пиццерий №1 в России</p>
@@ -42,16 +45,21 @@
             <li><a href="#" class="header__link">Напитки</a></li>
             <li><a href="#" class="header__link">Другие товары</a></li>
           </ul>
-          <a href="#" class="header__btn"><span>Корзина</spa></a>
+          <a href="#" class="header__btn"><span>Корзина</span></a>
         </nav>
       </header>
-      <section class="slaids">
-         <div class="slaider">
-            <img class="image_1" src="/img/slaider/slaids_left.png" width="1060" height="300px" alt="">
-            <img class="image_2" src="img/slaider/sld_corr.png" width="1060" height="300px" alt="">
-            <img class="image_3" src="/img/slaider/slaids_right.png" width="1060" height="300px" alt="">
-         </div>
+      <!-- шапка сайта -->
+
+      <!-- слайдер -->
+      <section class="slids">
+            <div class="slider__image-2">
+               <img src="/img/slaider/sld_corr.png" width="1060" alt="">
+            </div>
       </section>
+
+      <!-- слайдер -->
+
+      <!-- основной контент -->
       <main class="main">
          <section class="new">
             <h1 class="new__title">Новое и популярное</h1>
@@ -93,6 +101,19 @@
                   </div>
                </div>
             </div>
+            <nav class="new__menu">
+               <ul class="new__list">
+                 <li>
+                   <a href="#" class="new__link">Пицца</a>
+                 </li>
+                 <li><a href="#" class="new__link">Комбо</a></li>
+                 <li><a href="#" class="new__link">Закуски</a></li>
+                 <li><a href="#" class="new__link">Десерты</a></li>
+                 <li><a href="#" class="new__link">Напитки</a></li>
+                 <li><a href="#" class="new__link last">Другие товары</a></li>
+               </ul>
+               <a href="#" class="new__btn"><span>Корзина</span></a>
+             </nav>
          </section>
          <section class="pizza">
             <h2 class="pizza__title">Пицца</h2>
@@ -106,6 +127,7 @@
                   <div class="pizza__pay">
                      <p class="pizza__cena">от 600 ₽</p>
                      <button class="pizza__btn" type="submit">Собрать</button>
+                     <button class="pizza__btn-2" type="submit">от 600 ₽</button>
                   </div>
                </div>
                <div class="pizza__item">
@@ -117,6 +139,7 @@
                   <div class="pizza__pay">
                      <p class="pizza__cena">от 625 ₽</p>
                      <button class="pizza__btn" type="submit">Выбрать</button>
+                     <button class="pizza__btn-2" type="submit">от 625 ₽</button>
                   </div>
                </div>
                <div class="pizza__item">
@@ -128,6 +151,7 @@
                   <div class="pizza__pay">
                      <p class="pizza__cena">от 625 ₽</p>
                      <button class="pizza__btn" type="submit">Выбрать</button>
+                     <button class="pizza__btn-2" type="submit">от 625 ₽</button>
                   </div>
                </div>
                <div class="pizza__item">
@@ -139,6 +163,7 @@
                   <div class="pizza__pay">
                      <p class="pizza__cena">от 625 ₽</p>
                      <button class="pizza__btn" type="submit">Выбрать</button>
+                     <button class="pizza__btn-2" type="submit">от 625 ₽</button>
                   </div>
                </div>
                <div class="pizza__item">
@@ -150,6 +175,7 @@
                   <div class="pizza__pay">
                      <p class="pizza__cena">от 445 ₽</p>
                      <button class="pizza__btn" type="submit">Выбрать</button>
+                     <button class="pizza__btn-2" type="submit">от 445 ₽</button>
                   </div>
                </div>
                <div class="pizza__item">
@@ -161,6 +187,7 @@
                   <div class="pizza__pay">
                      <p class="pizza__cena">от 495 ₽</p>
                      <button class="pizza__btn" type="submit">Выбрать</button>
+                     <button class="pizza__btn-2" type="submit">от 495 ₽</button>
                   </div>
                </div>
                <div class="pizza__item">
@@ -172,6 +199,7 @@
                   <div class="pizza__pay">
                      <p class="pizza__cena">от 245 ₽</p>
                      <button class="pizza__btn" type="submit">Выбрать</button>
+                     <button class="pizza__btn-2" type="submit">от 245 ₽</button>
                   </div>
                </div>
                <div class="pizza__item">
@@ -183,6 +211,7 @@
                   <div class="pizza__pay">
                      <p class="pizza__cena">от 245 ₽</p>
                      <button class="pizza__btn" type="submit">Выбрать</button>
+                     <button class="pizza__btn-2" type="submit">от 245 ₽</button>
                   </div>
                </div>
             </div>
@@ -199,6 +228,7 @@
                   <div class="combo__pay">
                      <p class="combo__cena">599 ₽</p>
                      <button class="combo__btn" type="submit">Собрать</button>
+                     <button class="combo__btn-2" type="submit">599 ₽</button>
                   </div>
                </div>
                <div class="combo__item">
@@ -210,6 +240,7 @@
                   <div class="combo__pay">
                      <p class="combo__cena">899 ₽</p>
                      <button class="combo__btn" type="submit">Собрать</button>
+                     <button class="combo__btn-2" type="submit">899 ₽</button>
                   </div>
                </div>
                <div class="combo__item">
@@ -221,6 +252,7 @@
                   <div class="combo__pay">
                      <p class="combo__cena">799 ₽</p>
                      <button class="combo__btn" type="submit">Собрать</button>
+                     <button class="combo__btn-2" type="submit">799 ₽</button>
                   </div>
                </div>
                <div class="combo__item">
@@ -232,6 +264,7 @@
                   <div class="combo__pay">
                      <p class="combo__cena">799 ₽</p>
                      <button class="combo__btn" type="submit">Собрать</button>
+                     <button class="combo__btn-2" type="submit">799 ₽</button>
                   </div>
                </div>
                <div class="combo__item">
@@ -243,6 +276,7 @@
                   <div class="combo__pay">
                      <p class="combo__cena">999 ₽</p>
                      <button class="combo__btn" type="submit">Собрать</button>
+                     <button class="combo__btn-2" type="submit">999 ₽</button>
                   </div>
                </div>
             </div>
@@ -254,11 +288,12 @@
                   <div class="zakuski__image">
                      <img src="/img/zakuski/zakuska1.png" alt="">
                   </div>
-                  <p class="zakuski__subtitle">Томатный суп с гренками</p>
+                  <p class="zakuski__subtitle"><span class="nameText">Томатный суп с гренками</span> <img src="/img/zakuski/Томатный суп с гренками 🌱.png" alt=""></p>
                   <p class="zakuski__sostav">Горячий суп с пшеничными гренками на основе фирменного соуса из итальянских томатов</p>
                   <div class="zakuski__pay">
                      <p class="zakuski__cena">99 ₽</p>
                      <button class="zakuski__btn" type="submit">В корзину</button>
+                     <button class="zakuski__btn-2" type="submit">99 ₽</button>
                   </div>
                </div>
                <div class="zakuski__item">
@@ -270,6 +305,7 @@
                   <div class="zakuski__pay">
                      <p class="zakuski__cena">149 ₽</p>
                      <button class="zakuski__btn" type="submit">В корзину</button>
+                     <button class="zakuski__btn-2" type="submit">149 ₽</button>
                   </div>
                </div>
                <div class="zakuski__item">
@@ -281,28 +317,31 @@
                   <div class="zakuski__pay">
                      <p class="zakuski__cena">159 ₽</p>
                      <button class="zakuski__btn" type="submit">В корзину</button>
+                     <button class="zakuski__btn-2" type="submit">159 ₽</button>
                   </div>
                </div>
                <div class="zakuski__item">
                   <div class="zakuski__image">
                      <img src="/img/zakuski/zakuska4.png" alt="">
                   </div>
-                  <p class="zakuski__subtitle">Острый Додстер</p>
+                  <p class="zakuski__subtitle"><span class="nameText">Острый Додстер</span><img src="/img/zakuski/Острый Додстер 🌶️🌶️.png" alt=""></p>
                   <p class="zakuski__sostav">Горячая закуска с острым цыпленком, перцем халапеньо, солеными огурчиками, томатами, моцареллой и соусом барбекю в тонкой пшеничной лепешке</p>
                   <div class="zakuski__pay">
                      <p class="zakuski__cena">159 ₽</p>
                      <button class="zakuski__btn" type="submit">В корзину</button>
+                     <button class="zakuski__btn-2" type="submit">159 ₽</button>
                   </div>
                </div>
                <div class="zakuski__item">
                   <div class="zakuski__image">
                      <img src="/img/zakuski/zakuska5.png" alt="">
                   </div>
-                  <p class="zakuski__subtitle">Додстер Чипотле</p>
+                  <p class="zakuski__subtitle"><span class="nameText">Додстер Чипотле</span> <img src="/img/zakuski/Додстер Чипотле 🌶️.png" alt=""></p>
                   <p class="zakuski__sostav">Горячая закуска с пикантным соусом чипотле из копченых перчиков, цыпленком, томатами, моцареллой в тонкой пшеничной лепешке</p>
                   <div class="zakuski__pay">
                      <p class="zakuski__cena">159 ₽</p>
                      <button class="zakuski__btn" type="submit">В корзину</button>
+                     <button class="zakuski__btn-2" type="submit">159 ₽</button>
                   </div>
                </div>
             </div>
@@ -319,6 +358,7 @@
                   <div class="desserts__pay">
                      <p class="desserts__cena">99 ₽</p>
                      <button class="desserts__btn" type="submit">В корзину</button>
+                     <button class="desserts__btn-2" type="submit">99 ₽</button>
                   </div>
                </div>
                <div class="desserts__item">
@@ -330,6 +370,7 @@
                   <div class="desserts__pay">
                      <p class="desserts__cena">149 ₽</p>
                      <button class="desserts__btn" type="submit">В корзину</button>
+                     <button class="desserts__btn-2" type="submit">149 ₽</button>
                   </div>
                </div>
                <div class="desserts__item">
@@ -341,6 +382,7 @@
                   <div class="desserts__pay">
                      <p class="desserts__cena">159 ₽</p>
                      <button class="desserts__btn" type="submit">В корзину</button>
+                     <button class="desserts__btn-2" type="submit">159 ₽</button>
                   </div>
                </div>
                <div class="desserts__item">
@@ -352,6 +394,7 @@
                   <div class="desserts__pay">
                      <p class="desserts__cena">159 ₽</p>
                      <button class="desserts__btn" type="submit">В корзину</button>
+                     <button class="desserts__btn-2" type="submit">159 ₽</button>
                   </div>
                </div>
                <div class="desserts__item">
@@ -363,6 +406,7 @@
                   <div class="desserts__pay">
                      <p class="desserts__cena">159 ₽</p>
                      <button class="desserts__btn" type="submit">В корзину</button>
+                     <button class="desserts__btn-2" type="submit">159 ₽</button>
                   </div>
                </div>
             </div>
@@ -379,6 +423,7 @@
                   <div class="drinks__pay">
                      <p class="drinks__cena">99 ₽</p>
                      <button class="drinks__btn" type="submit">В корзину</button>
+                     <button class="drinks__btn-2" type="submit">119 ₽</button>
                   </div>
                </div>
                <div class="drinks__item">
@@ -390,6 +435,7 @@
                   <div class="drinks__pay">
                      <p class="drinks__cena">149 ₽</p>
                      <button class="drinks__btn" type="submit">В корзину</button>
+                     <button class="drinks__btn-2" type="submit">95 ₽</button>
                   </div>
                </div>
                <div class="drinks__item">
@@ -401,6 +447,7 @@
                   <div class="drinks__pay">
                      <p class="drinks__cena">159 ₽</p>
                      <button class="drinks__btn" type="submit">В корзину</button>
+                     <button class="drinks__btn-2" type="submit">95 ₽</button>
                   </div>
                </div>
                <div class="drinks__item">
@@ -412,6 +459,7 @@
                   <div class="drinks__pay">
                      <p class="drinks__cena">159 ₽</p>
                      <button class="drinks__btn" type="submit">В корзину</button>
+                     <button class="drinks__btn-2" type="submit">95 ₽</button>
                   </div>
                </div>
                <div class="drinks__item">
@@ -423,15 +471,121 @@
                   <div class="drinks__pay">
                      <p class="drinks__cena">159 ₽</p>
                      <button class="drinks__btn" type="submit">В корзину</button>
+                     <button class="drinks__btn-2" type="submit">95 ₽</button>
                   </div>
                </div>
             </div>
          </section>
       </main>
+      <!-- основной контент -->
+
+      <!-- попап -->
+      <section class="popap" style="display: none;">
+         <div class="popap__row">
+           <div class="popap__image">
+             <img class=""
+               src="./img/popap/pizza__main.png" width="372" height="372"
+               alt=""
+             />
+           </div>
+           <div class="popap__select">
+             <div class="select__row">
+               <div class="select__title">
+                 <p class="select__name">Чиззи чеддер</p>
+                 <p class="select__about">30 см, традиционное тесто, 480 г</p>
+                 <div class="select__composition">
+                   <button class="select__buttons">Ветчина</button> <img class="bb" src="/img/popap/delete.svg" alt="">, сыр чеддер, <button class="select__buttons">сладкий перец</button> <img src="/img/popap/delete.svg" alt="">, моцарелла, томатный соус, <button class="select__buttons">чеснок</button> <img src="/img/popap/delete.svg" alt="">, 
+                   <button class="select__buttons">итальянские травы</button> <img src="/img/popap/delete.svg" alt="">
+                 </div>
+               </div>
+             </div>
+             <div class="select__dough">
+               <div class="select__size">
+                  <input type="radio" id="little" name="size" value="little"/>
+                  <label for="little">Маленькая</label>
+               </div>
+               <div class="select__size">
+                  <input type="radio" id="middle" name="size" value="middle"/>
+                  <label for="middle">Средняя</label>
+               </div>
+               <div class="select__size">
+                  <input checked type="radio" id="big" name="size" value="big"/>
+                  <label for="big">Большая</label>
+               </div>
+             </div>
+             <div class="select__second">
+               <div class="select__model">
+                  <input checked type="radio" id="traditional" name="model" value="traditional"/>
+                  <label for="traditional">Традиционное</label>
+               </div>
+               <div class="select__model">
+                  <input type="radio" id="thin" name="model" value="thin"/>
+                  <label for="thin">Тонкое</label>
+               </div>
+             </div>
+             <div class="select__add">
+               <p class="select__sub">Добавить в пиццу</p>
+               <div class="add__row">
+                 <div class="add__item">
+                   <div class="add__image">
+                     <img src="/img/popap/chees.png" alt="" />
+                   </div>
+                   <p class="add__name">Сырный бортик</p>
+                   <p class="add__cena">599 ₽</p>
+                 </div>
+                 <div class="add__item">
+                  <div class="add__image">
+                    <img src="/img/popap/mashroom.png" alt="" />
+                  </div>
+                  <p class="add__name">Шампиньоны</p>
+                  <p class="add__cena">39 ₽</p>
+                </div>
+                <div class="add__item">
+                  <div class="add__image">
+                    <img src="/img/popap/chiken.png" alt="" />
+                  </div>
+                  <p class="add__name">Цыпленок</p>
+                  <p class="add__cena">59 ₽</p>
+                </div>
+                <div class="add__item">
+                  <div class="add__image">
+                    <img src="/img/popap/ch__white.png" alt="" />
+                  </div>
+                  <p class="add__name">Брынза</p>
+                  <p class="add__cena">59 ₽</p>
+                </div>
+                <div class="add__item">
+                  <div class="add__image">
+                    <img src="/img/popap/cucumber.png" alt="" />
+                  </div>
+                  <p class="add__name">Перец</p>
+                  <p class="add__cena">59 ₽</p>
+                </div>
+                <div class="add__item">
+                  <div class="add__image">
+                    <img src="/img/popap/meat.png" alt="" />
+                  </div>
+                  <p class="add__name">Мясо</p>
+                  <p class="add__cena">69 ₽</p>
+                </div>
+               </div>
+             </div>
+             <div class="select__btn">
+                <button class="select__subt" type="submit">Добавить в корзину за 625 ₽</button>
+             </div>
+           </div>
+         </div>
+      </section>
+       <!-- попап -->
+
+      <!-- подвал -->
       <footer class="footer">
-         <div class="footer__header">
-            <div class="footer__menu">
-               <div class="footer__items">
+
+         <!-- верхняя часть подвала -->
+         <div class="footer__top">
+            <div class="footer__menu">    <!-- контейнер для списков, левая часть -->
+
+               <div class="footer__items">    <!-- 1 список -->
                   <p class="items__title">Додо Пицца</р>
                   <ul class="items__list">
                      <li><a href="#" class="items__link">О нас</a></li>
@@ -464,8 +618,9 @@
                   </ul>
                </div>
             </div>
-            <div class="footer__about">
-               <div class="footer__apps">
+
+            <div class="footer__about"> <!-- 2 контейнер, правая часть -->
+               <div class="footer__apps"> <!-- элемент контейнера -->
                   <a href="#" class="footer__btn">
                      <img src="/img/footer/google.png" alt="">
                   </a>
@@ -480,6 +635,9 @@
                <a class="footer__mail" href="mailto:feedback@dodopizza.com">feedback@dodopizza.com</a>
             </div>
          </div>
+         <!-- верхняя часть подвала -->
+
+         <!-- средняя часть подвала -->
          <div class="footer__body">
             <div class="body__money">
                <p class="body__title">1 396 362 874 ₽</p>
@@ -490,7 +648,10 @@
                <p class="body__text">в 14 странах, включая Китай, США и Великобританию</p>
             </div>
          </div>
-         <div class="footer__info">
+         <!-- средняя часть подвала -->
+
+         <!-- нижняя часть подвала -->
+         <div class="footer__info"> 
             <div class="info__dodo">
                <img src="/img/footer/footer_dodo.png" alt="">
                <p class="info__title">© 2021</p>
@@ -519,7 +680,10 @@
                </a>
             </div>
          </div>
+         <!-- нижняя часть подвала -->
+
       </footer>
+      <!-- подвал -->
     </div>
   </body>
 </html>

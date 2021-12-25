@@ -1,93 +1,224 @@
-.header {
-  display: grid;
-  grid-area: header;
-  /* justify-content: space-between; */
-  grid-template: 1fr 1fr / 1fr minmax(auto, 1060px) 1fr;
-  row-gap: 31px;
-}
-.header__dodo {
-  display: grid;
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  justify-content: space-between;
-}
-.header__logo {
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-rows: 1fr 1fr;
-  column-gap: 14px;
-  /* justify-content: space-between; */
-  /* grid-column: 2 / 3;  */
-}
-.header__image {
-  grid-row: span 2;
-}
-.header__name {
-  background: url("/img/header/dodo.svg") center/100% no-repeat;
-  color: transparent;
+@media (min-width: 545px) {
+  .header {
+    padding: 0 16px;
+    display: grid;
+    grid-area: header;
+    /* justify-content: space-between; */
+    grid-template: 1fr 1fr / 1fr minmax(auto, 1060px) 1fr;
+    row-gap: 31px;
+  }
+
+  .header__dodo {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 14px;
+    /* justify-content: space-between; */
+    /* grid-column: 2 / 3;  */
+  }
+
+  .header__image {
+    grid-row: span 2;
+  }
+
+  .header__name {
+    background: url("/img/header/dodo.svg") center/100% no-repeat;
+    color: transparent;
+  }
+
+  .header__title {
+    grid-row: 1;
+  }
+
+  .header__text {
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #343434;
+    align-self: end;
+  }
+
+  .header__calls {
+    grid-column: 2 / 3;
+  }
+
+  .header__number {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+  }
+
+  .header__free {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .header__menu {
+    /* width: 1060px;
+    background-color: #ffffff;
+    position: fixed;
+    top: 100px;
+    left: 11%; */
+    display: grid;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__list {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 24px;
+  }
+
+  .header__link {
+    display: block;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+  }
+
+  .header__link:hover {
+    color: #f96900;
+  }
+
+  .header__btn {
+    grid-column: 2 / 3;
+    background-color: #f96900;
+    width: 104px;
+    border-radius: 30px;
+    text-align: center;
+    padding: 9px 0;
+  }
+
+  span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+  }
 }
 
-.header__title {
-  grid-row: 1;
-}
-.header__text {
-  font-style: normal;
-  font-size: 12px;
-  line-height: 16px;
-  color: #343434;
-  align-self: end;
-}
-.header__calls {
-  grid-column: 2 / 3;
-}
-.header__number {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 25px;
-  color: #000000;
-}
-.header__free {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 20px;
+@media (max-width: 429px) {
+  .header {
+    padding: 0 0 0 16px;
+    display: grid;
+    grid-area: header;
+    justify-content: start;
+  }
+  .header__logo {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 8px;
+  }
+  .header__calls {
+    display: none;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__text {
+    display: none;
+    color: transparent;
+  }
+  .header__image {
+    width: 100%;
+    height: auto;
+  }
+  .header__name {
+    align-self: center;
+    height: 15px;
+    width: 125px;
+    background: url("/img/header/dodo.svg") 100%/100% no-repeat;
+    color: transparent;
+  }
+  .header__name img {
+    width: 100%;
+    height: auto;
+  }
 }
 
-.header__menu {
-  display: grid;
-  grid-row: 2 / 3;
-  grid-column: 2 / 3;
-  justify-content: space-between;
-  align-items: center;
-}
-.header__list {
-  display: grid;
-  grid-auto-flow: column;
-  column-gap: 24px;
-}
-.header__link {
-  display: block;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 19px;
-  color: #000000;
-}
-.header__link:hover {
-  color: #f96900;
-}
-.header__btn {
-  grid-column: 2 / 3;
-  background-color: #f96900;
-  width: 104px;
-  border-radius: 30px;
-  text-align: center;
-  padding: 9px 0;
-}
-span {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
+@media (max-width: 544px) and (min-width: 430px) {
+  .header__logo {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 14px;
+    /* justify-content: space-between; */
+    /* grid-column: 2 / 3;  */
+  }
+
+  .header {
+    padding: 0 16px;
+    display: grid;
+    grid-area: header;
+    /* justify-content: space-between; */
+    grid-template: 1fr / 1fr minmax(auto, 1060px) 1fr;
+    row-gap: 31px;
+  }
+
+  .header__dodo {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-content: space-between;
+  }
+
+  .header__image {
+    grid-row: span 2;
+  }
+
+  .header__name {
+    background: url("/img/header/dodo.svg") center/100% no-repeat;
+    color: transparent;
+  }
+
+  .header__title {
+    grid-row: 1;
+  }
+
+  .header__text {
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #343434;
+    align-self: end;
+  }
+
+  .header__calls {
+    grid-column: 2 / 3;
+  }
+
+  .header__number {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+  }
+
+  .header__free {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .header__menu {
+    display: none;
+  }
 }

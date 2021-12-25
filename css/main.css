@@ -9,4 +9,5 @@
   display: grid;
   grid-area: main;
   grid-template: 1fr / 1fr minmax(auto, 1060px) 1fr;
+  padding: 0 0px 0 16px;
 }
